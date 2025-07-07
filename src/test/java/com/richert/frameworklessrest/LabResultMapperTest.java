@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LabResultMapperTest {
+
     /**
      * Test {@link LabResultMapper#toEntity(LabResultDTO)}.
      *
@@ -43,7 +44,6 @@ class LabResultMapperTest {
      */
     @Test
     @DisplayName("Test toEntity(LabResultDTO); when 'null'; then throw IllegalArgumentException")
-
     @MethodsUnderTest({"LabResult LabResultMapper.toEntity(LabResultDTO)"})
     void testToEntity_whenNull_thenThrowIllegalArgumentException() {
         // Arrange, Act and Assert
